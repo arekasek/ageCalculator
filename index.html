@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="date">
+        <form action="/" method="get">
+        <div class="day">
+          <label class="date-label incorrect" id="day">DAY</label>
+          <input class="date-input incorrect" type="text" id="day1" placeholder="DD" required/>
+          <span class="incorrect-details" id="incorrect"></span>
+        </div>
+
+        <div class="month">
+          <label class="date-label" id="month">MONTH</label>
+          <input class="date-input" type="text" id="month1" placeholder="MM" required/>
+          <span class="incorrect-details" id="incorrect"></span>
+        </div>
+
+        <div class="year">
+          <label class="date-label" id="year">YEAR</label>
+          <input class="date-input" type="text" id="year1" placeholder="YYYY" required/>
+          <span class="incorrect-details" id="incorrect"></span>
+        </div>
+      </div>
+      <div class="line">
+        <button id="send">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="46"
+            height="44"
+            viewBox="0 0 46 44"
+          >
+            <g fill="none" stroke="#FFF" stroke-width="2">
+              <path
+                d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+              />
+            </g>
+          </svg>
+        </button>
+      </form>
+        <hr />
+      </div>
+
+      <main>
+        <div class="result">
+          <div class="text">
+            <span class="violet">--</span><span>years</span>
+          </div>
+          <br />
+        </div>
+
+        <div class="result">
+          <div class="text">
+            <span class="violet">--</span><span>months</span>
+          </div>
+          <br />
+        </div>
+
+        <div class="result">
+          <div class="text">
+            <span class="violet">26</span><span>days</span>
+          </div>
+          <br />
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
